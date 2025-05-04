@@ -1,0 +1,467 @@
+<!Doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Rep.biolo-Filmes</title>
+   <style>
+
+   body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+     background-color: black;
+   		ackground-image:	url(1imagem.jpg);
+      }
+     header {
+       background-color: #333;
+       color: white;
+       display: flex;
+       padding: 15px 30px;
+       justify-content: space-between;
+       align-items: center;
+       
+     }
+     nav a {
+       color: black;
+       text-decoration: none;
+       margin-left: 20px;
+     }
+     nav a:hover {
+      text-decoration: underline;
+      background-color: orange;
+      border-radius: 10px;
+      border: 10px solid orange;
+      text-decoration: none;
+    }
+    .subcabecalho{
+      background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            /* Torna o cabeçalho fixo */
+            position: sticky;
+            top: 0; /* Fixa no topo da viewport */
+            z-index: 100; /* Garante que fique acima de outros elementos */
+            /* Efeitos adicionais para melhor aparência */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            background-color: #e9ecef;
+    }
+    .subcabecalh {
+      background-color: #e9ecef;
+        padding: 0.5rem 1rem;
+        justify-content: space-between;
+    }
+     .menu-categorias {
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+        color: black;
+    }
+     .comprar a {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.comprar a:hover {
+  background-color: orange;
+
+}
+      
+     .conteudo-principal {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(99px, 2fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .bloco-imagem {
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba (0,0,0,0.2);
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .bloco-imagem img {
+      width: 100%;
+      height: auto;
+    }
+
+    .bloco-imagem p {
+      margin: 10px;
+      font-weight: bold;
+    }
+    fim{
+      border: 1px solid black;
+      border-bottom: 2px solid black;
+    }
+    
+.site-footer {
+    background-color: black;
+    ackground-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+    border-top: 0.5pt solid white;
+  
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    color: #f39c12;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #f39c12;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.social-icon {
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.newsletter-form input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.newsletter-form button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+}
+
+.payment-methods {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.payment-methods img {
+    height: 30px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        display: flex;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .biolo{
+      color: white;
+      text-decoration: none;
+    }
+      .series {
+        color: red;
+       text-align: center;
+       font-size: 2rem;
+       font-style: italic;
+        animation: fadeIn 1s ease-in;
+        font-weight: bold;
+       
+      }
+    }
+    .avenda{
+      color: orange;
+    }
+    .bcomprar{
+      background-color: #39f037;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+       .lista-produtos {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        
+        .lista-produtos ol {
+            padding-left: 20px;
+            color: white;
+        }
+        
+        .lista-produtos li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: red
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+                /* Efeitos de animação */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        .destaque-titulo{
+          color: orange;
+            text-align: center;
+            font-size: 2rem;
+            font-style: italic;
+            margin: 2rem 0 1rem;
+            position: relative;
+            padding-bottom: 10px;
+       
+        }
+                .comprar-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+                .comprar-btn:hover {
+            background-color: orange;
+            transform: translateY(-5px);
+}
+.leva {
+  color: orange;
+  font-weight: bold;
+}
+   </style>
+
+  </head>
+  <body>
+      <!-- cabeçalho -->
+    <header>
+  <a href="Rindex.html" class="biolo"><h1>REPUBLICA DO BIOLO</a></h1>
+       <nav class="comprar">
+      <a href="fpv.html" class="comprar">VENDER</a>
+      </nav>
+    </header>
+             <!-- Subcabeçalho -->
+        <nav class="subcabecalho">
+            <ul class="menu-categorias">
+                <li><a href="Livros.html">Livros</a></li>
+                <li><a href="telefones.html">Telefones</a></li>
+                <li><a href="#filmes">Filmes</a></li>
+     <li><a href="#mobiliária">Mobiliária</a></li>
+     <!--Filmes da SEMANA-->
+     </nav>
+       <p class="series"> GRÁTIS</p>
+       <main class="conteudo-principal">
+      <div class="bloco-imagem">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/62/After_2019_film.png" alt="Imagem 1">
+      <a href="tel:+244929294302" class="leva">Levar</a>
+    </div>
+        <div class="bloco-imagem">
+      <img src="https://br.web.img3.acsta.net/pictures/21/02/24/14/51/4981901.jpg" alt="Imagem 2">
+         <a href="tel:+244929294302"class="leva">Levar</a>
+    </div>
+  
+    </main>
+   <section class="lista-produtos fade-in">
+        <h2 class="destaque-titulo">SÉRIES E FILMES EM PROMUÇÃO</h2>
+        <ol>
+            <li>Prison Break (Coleção Completa) - <strong>5.000Kz</strong></li>
+            <li>Casa de Papel (Todas as Temporadas) - <strong>4.500</strong></li>
+            <li>Sangue e Água (Todas Temporadas) - <strong>4.000Kz</strong></li>
+            <li>Lupin (1ª e 2ª Temporadas) - <strong>1000Kz</strong></li>
+            <li>Sintonia (1ª e 2ª Temporada) - <strong>1.000Kz</strong></li>
+            <li>O Apagão - <strong>2.000kz</strong></li>
+            <li>O Atirador (Coleção) - <strong>4.000Kz</strong></li>
+        </ol>
+        <div style="text-align: center; margin-top: 30px;">
+           <a href="tel:929294302"> <button class="comprar-btn" style="padding: 12px 30px; font-size: 1.2rem;">COMPRAR AGORA</button></a>
+        </div>
+    </section>
+    <footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <ul>
+                <li><a href="#">Nossa História</a></li>
+                <li><a href="#">Trabalhe Conosco</a></li>
+                <li><a href="#">Políticas de Privacidade</a></li>
+                <li><a href="#"></a></li>
+              
+            </ul>
+        </div>
+ 
+
+        <div class="footer-section">
+            <h3>Redes Sociais</h3>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <h3 class="newsletter-title">Receba Ofertas</h3>
+            <form class="newsletter-form" action="https//formspree.io/f/anselmomariz9@gmail.com">
+                <input type="email" placeholder="Digite seu e-mail">
+                <button type="submit">Assinar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Sua Praça Online. Todos os direitos reservados.</p>
+        <div class="payment-methods">
+            <img src="visa-icon.png" alt="Visa">
+            <img src="mastercard-icon.png" alt="Mastercard">
+            <img src="boleto-icon.png" alt="Boleto">
+            <img src="pix-icon.png" alt="PIX">
+        </div>
+    </div>
+</footer>
+
+  
+       <script>
+      // 1. Efeito de rolagem suave para links internos
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          if(targetId !== '#') {
+            document.querySelector(targetId).scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // 2. Animação ao rolar a página
+      function animateOnScroll() {
+        const elements = document.querySelectorAll('.bloco-imagem, .lista-produtos, .destaque-titulo');
+        const windowHeight = window.innerHeight;
+        
+        elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          if (elementPosition < windowHeight - 100) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+          }
+        });
+      }
+
+      // Inicializa as animações
+      window.addEventListener('load', animateOnScroll);
+      window.addEventListener('scroll', animateOnScroll);
+
+      // 3. Botão flutuante do WhatsApp
+      const whatsappBtn = document.querySelector('.whatsapp-float');
+      if(whatsappBtn) {
+        whatsappBtn.addEventListener('click', function() {
+          // Aqui você pode adicionar tracking de eventos se necessário
+          console.log('WhatsApp button clicked');
+        });
+      }
+
+      // 4. Validação do formulário de newsletter
+      const newsletterForm = document.querySelector('.newsletter-form');
+      if(newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          const emailInput = this.querySelector('input[type="email"]');
+          if(!emailInput.value.includes('@')) {
+            e.preventDefault();
+            alert('Por favor, insira um endereço de e-mail válido!');
+            emailInput.focus();
+          } else {
+            // Adicionar aqui código para enviar para o backend ou service
+            alert('Obrigado por se inscrever! Você receberá nossas ofertas em breve.');
+          }
+        });
+      }
+
+      // 5. Contador de produtos em promoção
+      function updatePromoCounter() {
+        const promoItems = document.querySelectorAll('.lista-produtos li');
+        const counterElement = document.createElement('div');
+        counterElement.style.textAlign = 'center';
+        counterElement.style.margin = '10px 0';
+        counterElement.style.color = 'orange';
+        counterElement.style.fontWeight = 'bold';
+        counterElement.textContent = `${promoItems.length} itens em promoção!`;
+        
+        const titleElement = document.querySelector('.destaque-titulo');
+        if(titleElement && !document.getElementById('promo-counter')) {
+          counterElement.id = 'promo-counter';
+          titleElement.insertAdjacentElement('afterend', counterElement);
+        }
+      }
+
+      // 6. Efeito de hover nos produtos
+      const productBlocks = document.querySelectorAll('.bloco-imagem
+    
+  </body>
+</html>

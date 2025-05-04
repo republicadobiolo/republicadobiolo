@@ -1,0 +1,162 @@
+<!doctype html>
+<htlm lang="pt-br">
+  <head>
+    <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <style>
+      :root {
+      --primary-color: #ff6b35;
+      --secondary-color: #ff8c42;
+      --accent-color: #f7c59f;
+      --dark-color: #2a324b;
+      --light-color: #f8f9fa;
+    }
+      body {
+        font-family: Arial, Sans-Serif;
+        background-color: ;
+        margin: 0;
+      }
+      .required:after{
+        content: " *";
+        color: red;
+      }
+      fieldset {
+        border-radius: 8px;
+        margin: 10px;
+      }
+      .legendd {
+        color: orange;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      input[type="text"],
+      [type="tel"],
+         [type="email"]
+      {
+        color: orange;
+        width: 70%;
+        padding: 8px;
+        border-radius: 10px;
+      }
+      input[type="date"] {
+        color: orange;
+        border-radius: 10px;
+      }
+      label {
+        font-size: 1.1rem;
+        text-weight: bold;
+      }
+      h1 {
+        background-color: orange;
+        margin: -2px;
+        padding: 10px;
+      }
+      button{
+        padding: 12px 140px;
+        border-radius: 10px;
+        background-color: orange;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CADASTRO DE COLABORADOR</h1>
+    <br>
+    <br>
+<fieldset class="dadospessoais"><legend class="legendd">CADASTRO</legend>
+
+<form  action="https://formspree.io/f/xblodkbj" method="POST" enctype="multipart/form-data">
+<label  class="required">Nome Completo</label><input type="text" placeholder="Seu nome completo" maxlength="40" name="Nome" class="required" required><br>
+<label  class="required">Bilhete de identidade N°</label><input type="text" name="NúmeroBI" maxlength="14" placeholder="Ex:000000000XX000" class="required" required>
+<br>
+<label  class="required">Número de telefone</label>
+<input type="tel" placeholder="Ex.9xxxxxxxx" maxlength="13" name="telefone" class="required" required><br>
+<label  class="required">Naturalidade</label><br>
+<input type="text" name="Naturalidade" list="provincia" placeholder="Sua provincia" required><br>
+<datalist id="provincia">
+  <option>Huíla</option>
+  <option>Namibe</option>
+  <option>Cunene</option>
+  <option>Cuando</option>
+  <option>Cubango</option>
+  <option>Huambo</option>
+  <option>Benguela</option>
+  <option>Bie</option>
+  <option>Moxico</option>
+  <option>Moxico-leste</option>
+  <option>Icole-bengo</option>
+  <option>Bengo</option>
+  <option>Malanje</option>
+  <option>Zaire</option>
+  <option>Luanda</option>
+  <option>Lunda-Norte</option>
+  <option>Lunda-Sul</option>
+  <option>Cuanza-sul</option>
+  <option>Cuanza-Norte</option>
+  <option>Uige</option>
+  <option>Zaire</option>
+  <option>Cabinda</option>
+</datalist>
+
+<label>Residencia actual</label>
+<input type="text" name="bairro" list="bairro" placeholder="Seu Bairro">
+<datalist id="bairro">
+   <option>Selecione...</option>
+   <option>Chioco</option>
+   <option>João de Almeida</option>
+      <option>Tchavola</option>
+       <option>Kwua</option>
+        <option>Tchituno</option>
+        <option> Mitcha</option>
+         <option>Mapunda</option>
+       <option>Santo António</option>
+        <option>Benfica</option>
+         <option>Huíla Pão</option>
+          <option>Matador</option>
+           <option>Caluva</option>
+          <option>Bula Matadi</option>
+            <option>Calunbiro</option>
+            <option>Nambambi</option>
+            <option></option>
+            <option></option>
+   <option>Comercial</option>
+   <option>Ferrovia</option>
+   <option>Centralidade da Quilemba</option>
+   <option>Mutundo</option>
+   <option>Lalula</option>
+      <option>Arco-iris</option>
+      </datalist><br>
+      <label>Data de nascimento</label><br>
+<input type="date" name="nascimento"><br>
+<br>
+<br>
+<fieldset>
+<legend><label class="required">Sexo</label></legend>
+  <input type="radio" name="sex" value="homem" id="ex" required><label for="ex">Masculino</label><br>
+<input type="radio" value="mulher" name="sex" id="fex"va><label for="fex">Femenino</label><br>
+<br></fieldset>
+<br>
+<label class="required">Email:</label>
+<br><input type="email" name="emael" placeholder="Coloque um email valído" required>
+<br>
+<br>
+<label>Quero trabalhar como</label><br>
+<fieldset>
+  <input type="checkbox" name="trabalharcomo" value="Fornecedor">Fornecedor<br>
+<input type="checkbox" name="trabalharcomo" value="Investidor">Investidor<br>
+<input type="checkbox" name="trabalharcomo" value="Intermediario">Intermediario
+<br>
+<input type="checkbox" name="trabalharcomo" value="plus">Aceder ao artista PLUS<br>
+</fieldset>
+<br>
+<br>
+<br>
+</fieldset>
+<button type="submit">Cadastrar</button>
+
+</form>
+
+
+  </body>
+</htlm>

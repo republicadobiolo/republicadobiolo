@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO</title>
+    <style>
+    fieldset{
+     width: 150px;
+    }
+    body{
+      margin: 0;
+      font-family: Arial; Sans-Serif;
+    }
+    h1{
+      background-color: blue;
+      padding: 15px;
+      margin: -4px;
+    }
+      .formularioone {
+        border: 1px solid black;
+        border-botton: 1px;
+        padding: 10px;
+        margin: 10px;
+        padding: 2.5rem;
+         background: linear-gradient(deg, #ff4500, #ff8c00);
+         border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+          transition: transform 0.3s ease;
+      }
+      label{
+        text-align: left;
+        font-weight: bold;
+      }
+        button {
+            background-color:
+            color: white;
+            border-radius: 25px;
+            padding: 10px 100px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: blue;
+            margin-left: 15%;
+        }
+        #but {
+            padding: 25px 20px;
+            margin: 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+            .required:after {
+            content: " *";
+            color: red
+            }
+            section {
+              display: flex;
+            }
+            a {
+              color: black;
+              text-decoration: none;
+            }
+          input[type="text"], [type="number"], [type="date"] {
+            border-radius: 8px;
+          }
+          input[type="file"] {
+          border-radius: 8px;
+          border: 1px solid black;
+          margin: 1px ;
+          }
+          fieldset{
+            border-radius: 10px;
+          }
+          textarea {
+            border-radius: 8px;
+          }
+          legend{
+            font-size: 18px;
+            font-weight: bold;
+          }
+    input[type="password"] {
+      border-radius: 8px;
+      padding: 10px;
+      
+    }
+    </style>
+  </head>
+  <body>
+
+  <h1>FORMULÁRIO DE VENDA</h1>
+  <br>
+      <nav class="formularioone">
+      <fieldset><legend>SOBRE O ARTIGO </legend></fieldset>
+       <form action=https://formspree.io/f/xyzweawd method="POST">
+    <br>
+  <label class="required">Coloque as imagems do artigo (pelomenos 1 imagem) </label>
+ 
+  <p><input type="file" required name="foto">
+  <input type="file" name="foto"><br>
+  <input type="file" name="foto"><br>
+  <input type="file"name="foto"><br>
+  <br>
+  <fieldset>
+  <label class="required" required>Categoria:</label> <br>
+  <input type="checkbox" name="telefone">Telefone<br>
+  <input type="checkbox" name="Computador">Computador<br>
+   <input type="checkbox" name="Filmes">FILMES/SERIES<br>
+  <input type="checkbox" name="Livro">livro<br></fieldset>
+  <br>
+ <label> Porquê que estas a vende-lo?</label><br>
+  <textarea rows="5" name="motivo"maxlength="100"></textarea><br>
+  <br>
+ <label> Preço</label><br>
+  <input type="number" maxlength="8" name="preco"><br>
+  <br>
+ <label> Onde comprou o artigo?</label><br>
+  
+   <label for="comprou" class="com"></label>
+   <select id="comprou" name="onde_comprou" name="localdacompra">
+     <option value="Selecione...">Selecione...</option>
+     <option value="NA PRACA">NA PRACA</option>
+     <option value="NA LOJA"> NA LOJA</option>
+     <option value="NÃO LEMBRO">NÃO LENBRO</option>
+      <option value="HERANÇA">HERANÇA</option>
+   
+ <option value="NA RUA">NA RUA</option>
+ <option value="SOU REVENDEDOR">SOU REVENDEDOR</option>
+   </select></br>
+   <br>
+   <label>Quando comprou o artigo</label>
+   <input type="date" name="quandocomprou"><br>
+   <br>
+   <label class="required">Codigo de vendedor</label>
+   <input type="password"  maxlength="9" name="codigo" required placeholder="Seu Codigo">
+   <br>
+   <br>
+  <input type="checkbox" required><label>
+    Não estou a vender um artigo roubado.</label>
+  </nav>
+   </nav>
+      <button type="submit" class="but"class="ton">VENDER</button>
+      
+  
+  </form>
+  </body>
+</html>
